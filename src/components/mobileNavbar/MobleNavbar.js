@@ -30,7 +30,7 @@ export default function MobleNavbar({ position }) {
           <li>
             <a
               className={
-                position < -420 && position >= -1000
+                position < -420 && position >= -1750
                   ? styles.linkActive
                   : styles.link
               }
@@ -43,7 +43,7 @@ export default function MobleNavbar({ position }) {
           <li>
             <a
               className={
-                position < -1000 && position > -1900
+                position < -1750 && position >= -3000
                   ? styles.linkActive
                   : styles.link
               }
@@ -55,7 +55,7 @@ export default function MobleNavbar({ position }) {
           </li>
           <li>
             <a
-              className={position < -1900 ? styles.linkActive : styles.link}
+              className={position < -3000 ? styles.linkActive : styles.link}
               href="#contacto"
               onClick={() => setOpen(false)}
             >
