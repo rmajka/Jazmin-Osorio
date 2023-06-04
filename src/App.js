@@ -28,7 +28,7 @@ function App() {
 
   return (
     <div className="App">
-      <MobleNavbar />
+      <MobleNavbar position={position} />
       <Navbar position={position} />
       <div className="main">
         <Home divRef={divRef} />

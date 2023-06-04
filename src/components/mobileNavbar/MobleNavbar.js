@@ -3,7 +3,7 @@ import { useState } from "react";
 import SocialMediaBox from "../socialmediabox/SocialMediaBox";
 import Hamburger from "../hamburger/Hamburger";
 
-export default function MobleNavbar() {
+export default function MobleNavbar({ position }) {
   const [open, setOpen] = useState(false);
 
   return (
@@ -15,22 +15,50 @@ export default function MobleNavbar() {
       <div className={open ? styles.menuOpen : styles.menu}>
         <ul className={styles.listContainer}>
           <li>
-            <a href="#home" onClick={() => setOpen(false)}>
+            <a
+              className={
+                position < 81 && position >= -420
+                  ? styles.linkActive
+                  : styles.link
+              }
+              href="#home"
+              onClick={() => setOpen(false)}
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="#sobremi" onClick={() => setOpen(false)}>
+            <a
+              className={
+                position < -420 && position >= -1000
+                  ? styles.linkActive
+                  : styles.link
+              }
+              href="#sobremi"
+              onClick={() => setOpen(false)}
+            >
               Sobre mí
             </a>
           </li>
           <li>
-            <a href="#articulos" onClick={() => setOpen(false)}>
+            <a
+              className={
+                position < -1000 && position > -1900
+                  ? styles.linkActive
+                  : styles.link
+              }
+              href="#articulos"
+              onClick={() => setOpen(false)}
+            >
               Mis artículos
             </a>
           </li>
           <li>
-            <a href="#contacto" onClick={() => setOpen(false)}>
+            <a
+              className={position < -1900 ? styles.linkActive : styles.link}
+              href="#contacto"
+              onClick={() => setOpen(false)}
+            >
               Contacto
             </a>
           </li>

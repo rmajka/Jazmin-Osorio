@@ -69,11 +69,19 @@
     margin-bottom: 40px;
   }
 
-  .listContainer > li > a {
+  .link {
     text-decoration: none;
     color: var(--main-grey);
     font-size: 1.5rem;
     font-weight: 200;
+  }
+
+  .linkActive {
+    text-decoration: none;
+    color: var(--vinoTinto);
+    font-size: 1.5rem;
+    font-weight: 200;
+    border-bottom: 1px solid var(--vinoTinto);
   }
 
   .socialBox {
