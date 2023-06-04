@@ -10,7 +10,7 @@ export default function Navbar({ position }) {
           <li>
             <a
               className={
-                position < 81 && position >= -420 ? styles.active : styles.link
+                position < 81 && position >= -400 ? styles.active : styles.link
               }
               href="#home"
               on
@@ -21,7 +21,7 @@ export default function Navbar({ position }) {
           <li>
             <a
               className={
-                position < -420 && position >= -1000
+                position < -400 && position >= -950
                   ? styles.active
                   : styles.link
               }
@@ -33,7 +33,7 @@ export default function Navbar({ position }) {
           <li>
             <a
               className={
-                position < -1000 && position > -1800
+                position < -950 && position >= -1370
                   ? styles.active
                   : styles.link
               }
@@ -47,7 +47,7 @@ export default function Navbar({ position }) {
       <div className={styles.rightSide}>
         <SocialMediaBox />
         <a
-          className={position < -1800 ? styles.activeBtn : styles.contactoBtn}
+          className={position < -1370 ? styles.activeBtn : styles.contactoBtn}
           href="#contacto"
         >
           Contacto
