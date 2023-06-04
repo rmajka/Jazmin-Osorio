@@ -23,7 +23,7 @@
   font-family: var(--lora300);
 }
 
-.listContainer > li > a {
+.link {
   text-decoration: none;
   color: var(--main-grey);
 }
@@ -58,6 +58,14 @@
   display: flex;
   align-items: center;
 }
+/*======== active link========*/
+.active {
+  color: var(--vinoTinto);
+  border-bottom: 1px solid var(--vinoTinto);
+  text-decoration: none;
+}
+
+/*============================*/
 
 @media (max-width: 800px) {
   .navContainer {
