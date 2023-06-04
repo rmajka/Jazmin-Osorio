@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@300&display=swap");
+
+:root {
+  --playFair: "Playfair Display", serif;
+  --lora300: "Roboto", sans-serif;
+  --main-grey: #545353;
+  --white: #fff;
+  --vinoTinto: #4b1a21;
+  --header-font-size: 1.8rem;
+  --para-font-size: 1rem;
+  --header-font-mobile: 1.4rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+.main {
+  padding: 0 5%;
+}
+
+@media (min-width: 1400px) {
+  .App {
+    padding: 0 20%;
+  }
+}

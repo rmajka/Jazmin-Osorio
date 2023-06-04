@@ -1,0 +1,27 @@
+.container {
+  padding-bottom: 80px;
+  scroll-margin-top: 80px;
+}
+
+.container > h1 {
+  font-family: var(--playFair);
+  font-size: var(--header-font-size);
+  line-height: 2;
+  color: var(--vinoTinto);
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.container > p {
+  line-height: 1.5;
+  color: var(--main-grey);
+  font-size: var(--para-font-size);
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .container > h1 {
+    font-size: var(--header-font-mobile);
+    line-height: 1.5;
+  }
+}

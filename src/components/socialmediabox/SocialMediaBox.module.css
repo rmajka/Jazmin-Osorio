@@ -1,0 +1,32 @@
+.boxContainer {
+  display: flex;
+  align-items: center;
+}
+
+.boxContainer > img {
+  cursor: pointer;
+}
+
+.boxContainer > img:hover {
+  filter: contrast(200%);
+}
+
+.fbLogo {
+  width: 30px;
+}
+
+.instaLogo {
+  width: 30px;
+}
+
+.linkedinLogo {
+  width: 35px;
+}
+
+.fbLink {
+  margin-right: 10px;
+}
+
+.instaLink {
+  margin-right: 13px;
+}
