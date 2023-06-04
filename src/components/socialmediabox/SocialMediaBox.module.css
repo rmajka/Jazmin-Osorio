@@ -7,20 +7,28 @@
   cursor: pointer;
 }
 
-.boxContainer > img:hover {
-  filter: contrast(200%);
-}
-
 .fbLogo {
   width: 30px;
+}
+
+.fbLogo:hover {
+  filter: contrast(200%);
 }
 
 .instaLogo {
   width: 30px;
 }
 
+.instaLogo:hover {
+  filter: contrast(200%);
+}
+
 .linkedinLogo {
   width: 35px;
+}
+
+.linkedinLogo:hover {
+  filter: contrast(200%);
 }
 
 .fbLink {

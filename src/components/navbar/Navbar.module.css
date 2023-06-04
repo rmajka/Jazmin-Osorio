@@ -65,6 +65,17 @@
   text-decoration: none;
 }
 
+.activeBtn {
+  text-decoration: none;
+  border: 1px solid var(--main-grey);
+  border-radius: 30px 30px 30px 30px;
+  padding: 15px 25px;
+  color: var(--main-grey);
+  margin-left: 30px;
+  background-color: var(--vinoTinto);
+  color: var(--white);
+}
+
 /*============================*/
 
 @media (max-width: 800px) {

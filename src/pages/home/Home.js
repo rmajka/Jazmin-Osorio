@@ -1,11 +1,9 @@
 import styles from "./Home.module.css";
 import mainPhoto from "../../assets/photos/avatar.jpg";
 
-import React from "react";
-
-export default function Home() {
+export default function Home({ divRef }) {
   return (
-    <section className={styles.homeContainer} id="home">
+    <section className={styles.homeContainer} id="home" ref={divRef}>
       <div className={styles.imgContainer}>
         <img
           className={styles.mainPhoto}

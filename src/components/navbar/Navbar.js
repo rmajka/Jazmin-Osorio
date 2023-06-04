@@ -1,14 +1,7 @@
 import styles from "./Navbar.module.css";
 import SocialMediaBox from "../socialmediabox/SocialMediaBox";
-import { useState } from "react";
 
-export default function Navbar() {
-  const [activeLink, setActiveLink] = useState({
-    home: false,
-    sobremi: false,
-    articulos: false,
-  });
-
+export default function Navbar({ position }) {
   return (
     <nav className={styles.navContainer}>
       <div className={styles.leftSide}>
@@ -16,9 +9,8 @@ export default function Navbar() {
         <ul className={styles.listContainer}>
           <li>
             <a
-              className={activeLink.home ? styles.active : styles.link}
-              onClick={() =>
-                setActiveLink({ home: true, sobremi: false, articulos: false })
+              className={
+                position < 81 && position >= -420 ? styles.active : styles.link
               }
               href="#home"
               on
@@ -28,9 +20,10 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className={activeLink.sobremi ? styles.active : styles.link}
-              onClick={() =>
-                setActiveLink({ home: false, sobremi: true, articulos: false })
+              className={
+                position < -420 && position >= -1000
+                  ? styles.active
+                  : styles.link
               }
               href="#sobremi"
             >
@@ -39,20 +32,24 @@ export default function Navbar() {
           </li>
           <li>
             <a
-              className={activeLink.articulos ? styles.active : styles.link}
-              onClick={() =>
-                setActiveLink({ home: false, sobremi: false, articulos: true })
+              className={
+                position < -1000 && position > -1800
+                  ? styles.active
+                  : styles.link
               }
               href="#articulos"
             >
-              Artículos
+              Mis artículos
             </a>
           </li>
         </ul>
       </div>
       <div className={styles.rightSide}>
         <SocialMediaBox />
-        <a className={styles.contactoBtn} href="#contacto">
+        <a
+          className={position < -1800 ? styles.activeBtn : styles.contactoBtn}
+          href="#contacto"
+        >
           Contacto
         </a>
       </div>

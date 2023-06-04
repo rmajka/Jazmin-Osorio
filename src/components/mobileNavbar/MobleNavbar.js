@@ -26,7 +26,7 @@ export default function MobleNavbar() {
           </li>
           <li>
             <a href="#articulos" onClick={() => setOpen(false)}>
-              Artículos
+              Mis artículos
             </a>
           </li>
           <li>
