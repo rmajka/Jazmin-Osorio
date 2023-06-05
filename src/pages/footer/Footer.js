@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className={styles.container}>
       <SocialMediaBox />
       <span>
-        Diseño y codificación{" "}
+        Created by{" "}
         <a href="https://www.rmajka.com/" target="_blank">
           <em>Rafał Majka</em>
         </a>
