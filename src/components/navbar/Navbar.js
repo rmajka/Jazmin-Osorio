@@ -13,7 +13,6 @@ export default function Navbar({ position }) {
                 position < 81 && position >= -400 ? styles.active : styles.link
               }
               href="#home"
-              on
             >
               Home
             </a>

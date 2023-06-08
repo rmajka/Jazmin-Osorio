@@ -3,7 +3,7 @@ import fb from "../../assets/logos/facebook.svg";
 import insta from "../../assets/logos/insta.svg";
 import linkedin from "../../assets/logos/linkedin.svg";
 
-export default function SocialMediaBox({ margin }) {
+export default function SocialMediaBox() {
   return (
     <div className={styles.boxContainer}>
       <a
