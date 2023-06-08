@@ -10,6 +10,7 @@ export default function SocialMediaBox({ margin }) {
         className={styles.fbLink}
         href="https://m.facebook.com/jazmin.osorio.908"
         target="_blank"
+        rel="noreferrer"
       >
         <img className={styles.fbLogo} src={fb} alt="facebook jazim osorio" />
       </a>
@@ -17,6 +18,7 @@ export default function SocialMediaBox({ margin }) {
         className={styles.instaLink}
         href="https://www.instagram.com/jazmin_osmo/"
         target="_blank"
+        rel="noreferrer"
       >
         <img
           className={styles.instaLogo}
@@ -25,7 +27,11 @@ export default function SocialMediaBox({ margin }) {
         />
       </a>
 
-      <a href="https://www.linkedin.com/in/jazminosoriom/" target="_blank">
+      <a
+        href="https://www.linkedin.com/in/jazminosoriom/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <img
           className={styles.linkedinLogo}
           src={linkedin}

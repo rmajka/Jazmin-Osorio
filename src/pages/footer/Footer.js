@@ -5,12 +5,12 @@ export default function Footer() {
   return (
     <footer className={styles.container}>
       <SocialMediaBox />
-      <span>
-        Created by{" "}
-        <a href="https://www.rmajka.com/" target="_blank">
+      <p>
+        Created by&nbsp;
+        <a href="https://www.rmajka.com/" target="_blank" rel="noreferrer">
           <em>Rafał Majka</em>
         </a>
-      </span>
+      </p>
     </footer>
   );
 }

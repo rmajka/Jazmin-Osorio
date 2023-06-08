@@ -8,7 +8,7 @@ export default function Home({ divRef }) {
         <img
           className={styles.mainPhoto}
           src={mainPhoto}
-          alt="jazmin osorio photo"
+          alt="jazmin osorio home"
         />
       </div>
 
